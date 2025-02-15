@@ -29,7 +29,7 @@ def get_authenticated_service():
 
             flow = InstalledAppFlow.from_client_config(client_secrets, SCOPES)
 
-            credentials = flow.run_local_server(port=0)
+            credentials = flow.run_console()
 
         with open(token_file, "wb") as token:
             pickle.dump(credentials, token)
