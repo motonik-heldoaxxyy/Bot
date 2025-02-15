@@ -24,4 +24,4 @@ jobs:
 
       - name: Run script
         run: |
-          python halal.py  # Skrip yang akan dijalankan
+          python main.py  # Skrip yang akan dijalankan
